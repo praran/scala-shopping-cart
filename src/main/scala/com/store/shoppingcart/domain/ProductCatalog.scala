@@ -13,13 +13,19 @@ sealed trait Product {
 case object Apple extends Product {
   override val price: BigDecimal = 0.60
   override val name: String = "Apple"
-  override val currency: String = "GBP"
+  override val currency: String = "£"
 }
 
 case object Orange extends Product {
   override val price: BigDecimal = 0.25
   override val name: String = "Orange"
-  override val currency: String = "GBP"
+  override val currency: String = "£"
+}
+
+case object UnknownProduct extends Product {
+  override val price: BigDecimal = 0
+  override val name: String = "Unknown"
+  override val currency: String = ""
 }
 
 object ProductCatalog {

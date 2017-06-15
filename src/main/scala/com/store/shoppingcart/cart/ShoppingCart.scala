@@ -1,12 +1,15 @@
 package com.store.shoppingcart.cart
 
-import com.store.shoppingcart.domain.Product
+import com.store.shoppingcart.domain.{Price, Product}
 
 /**
   * Created by praran.
   */
-class ShoppingCart(items : List[Product]) {
-  def totalPrice() : BigDecimal = items.map(_.price).sum
+
+class ShoppingCart(items: List[Product]) {
+  def totalPrice(): Price = items.foldLeft(Price())(priceCombiner)
+
+  private def priceCombiner(price: Price, product: Product) = Price(amount = price.amount + product.price)
 
 }
 
