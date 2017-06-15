@@ -1,6 +1,5 @@
 package com.store.shoppingcart
-
-import com.store.shoppingcart.catalog._
+import com.store.shoppingcart.domain.{Apple, Orange, ProductCatalog}
 import org.scalatest.{FlatSpec, Matchers}
 
 /**
@@ -15,9 +14,9 @@ class ProductCatalogSpecs extends FlatSpec with Matchers {
   }
 
   "Product catalog" should "contain Orange" in {
-    Apple should not be null
-    Apple.name should equal("Orange")
-    Apple.price should equal(0.25)
+    Orange should not be null
+    Orange.name should equal("Orange")
+    Orange.price should equal(0.25)
   }
 
   "Product catalog" should "list all products" in {
