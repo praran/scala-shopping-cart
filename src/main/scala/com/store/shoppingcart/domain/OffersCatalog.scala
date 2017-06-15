@@ -4,7 +4,7 @@ package com.store.shoppingcart.domain
   * Created by praran.
   */
 sealed trait Offer {
-  def getDiscountedPrice(items: List[Product]) : Price
+  def getDiscountedPrice(items: List[Product]): Price
 }
 
 case object BuyOneGetOneAppleFreeOffer extends Offer {
@@ -25,5 +25,5 @@ case object ThreeForThePriceOfTwoOrangesOffer extends Offer {
 }
 
 object Offers {
-  def get : List[Offer] = BuyOneGetOneAppleFreeOffer :: ThreeForThePriceOfTwoOrangesOffer :: Nil
+  def list: List[Offer] = BuyOneGetOneAppleFreeOffer :: ThreeForThePriceOfTwoOrangesOffer :: Nil
 }

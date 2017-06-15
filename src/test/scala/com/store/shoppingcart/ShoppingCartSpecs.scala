@@ -26,10 +26,10 @@ class ShoppingCartSpecs extends FlatSpec with Matchers{
   }
 
   "Shopping cart" should "return price correct price when it contains more than one item" in {
-    ShoppingCart(List(Apple,Apple)).totalPrice() should be(Price(1.20))
+    ShoppingCart(List(Apple,Apple)).totalPrice() should be(Price(0.60))
     ShoppingCart(List(Orange,Orange)).totalPrice() should be(Price(0.50))
     ShoppingCart(List(Apple,Orange)).totalPrice() should be(Price(0.85))
-    ShoppingCart(List(Apple,Orange,Apple)).totalPrice() should be(Price(1.45))
+    ShoppingCart(List(Apple,Orange,Apple)).totalPrice() should be(Price(0.85))
   }
 
 }

@@ -17,7 +17,7 @@ class OfferSpecs extends FlatSpec with Matchers{
   }
 
   "Offers list" should "contain all offers" in {
-    val offersList : List[Offer] = Offers.get
+    val offersList : List[Offer] = Offers.list
     offersList should not be empty
     offersList should contain (BuyOneGetOneAppleFreeOffer)
     offersList should contain (ThreeForThePriceOfTwoOrangesOffer)

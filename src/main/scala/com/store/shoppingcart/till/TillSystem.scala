@@ -10,7 +10,7 @@ object TillSystem {
 
   def scanAndCalculateTotalPrice(items: List[String]) = {
     val totalPrice = ShoppingCart(items).totalPrice()
-    println(s"Total price is ${totalPrice.curreny} ${totalPrice.amount}")
+    println(s"Total price is $totalPrice")
     totalPrice
   }
 

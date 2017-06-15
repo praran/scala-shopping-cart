@@ -1,16 +1,25 @@
 package com.store.shoppingcart.cart
 
-import com.store.shoppingcart.domain.{Price, Product}
+import com.store.Defaults.addPrices
+import com.store.shoppingcart.domain._
 
 /**
   * Created by praran.
   */
 
-class ShoppingCart(items: List[Product]) {
+trait DiscountCalculator {
 
-  def totalPrice(): Price = items.foldLeft(Price())(priceCombiner)
+  def getDiscountedPrice(items: List[Product]): Price = {
+    Offers
+      .list
+      .map(_.getDiscountedPrice(items))
+      .reduce(addPrices)
+  }
+}
 
-  private def priceCombiner(price: Price, product: Product) = Price(amount = price.amount + product.price)
+class ShoppingCart(items: List[Product]) extends DiscountCalculator {
+
+  def totalPrice(): Price = getDiscountedPrice(items)
 
 }
 

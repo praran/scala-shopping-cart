@@ -3,7 +3,7 @@ package com.store.shoppingcart.utils
 import com.store.shoppingcart.domain.{Apple, Orange, Product, UnknownProduct}
 
 /**
-  * Created by praran on 15/06/2017.
+  * Created by praran.
   */
 object ProductMapper {
 
