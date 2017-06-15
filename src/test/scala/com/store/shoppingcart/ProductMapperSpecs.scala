@@ -7,6 +7,7 @@ import org.scalatest.{FlatSpec, Matchers}
 /**
   * Created by praran.
   */
+
 class ProductMapperSpecs extends FlatSpec with Matchers{
 
   "Product Mapper" should "return Unknown product when product does not match catalog" in {

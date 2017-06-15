@@ -7,6 +7,7 @@ import org.scalatest.{FlatSpec, Matchers}
 /**
   * Created by praran.
   */
+
 class TillSystemSpecs extends FlatSpec with Matchers{
 
   "Till system scan" should "accept list of items" in {

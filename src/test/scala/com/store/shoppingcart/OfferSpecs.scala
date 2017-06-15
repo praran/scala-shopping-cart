@@ -6,6 +6,7 @@ import org.scalatest.{FlatSpec, Matchers}
 /**
   * Created by praran.
   */
+
 class OfferSpecs extends FlatSpec with Matchers{
 
   "Offers " should "contain buy one get one free" in {

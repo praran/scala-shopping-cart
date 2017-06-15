@@ -7,6 +7,7 @@ import org.scalatest.{FlatSpec, Matchers}
 /**
   * Created by praran.
   */
+
 class ShoppingCartSpecs extends FlatSpec with Matchers{
 
   "Shopping cart" should "accept list of products" in {

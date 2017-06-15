@@ -7,6 +7,7 @@ import org.scalatest.{FlatSpec, Matchers}
 /**
   * Created by praran.
   */
+
 class DiscountCalculatorSpecs extends FlatSpec with Matchers with DiscountCalculator {
 
   "Discount calculator" should "apply all discounts" in {

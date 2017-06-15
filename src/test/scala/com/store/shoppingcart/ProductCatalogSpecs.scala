@@ -5,6 +5,8 @@ import org.scalatest.{FlatSpec, Matchers}
 /**
   * Created by praran.
   */
+
+
 class ProductCatalogSpecs extends FlatSpec with Matchers {
 
   "Product catalog" should "contain Apple" in {

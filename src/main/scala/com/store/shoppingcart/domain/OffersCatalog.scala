@@ -3,6 +3,10 @@ package com.store.shoppingcart.domain
 /**
   * Created by praran.
   */
+
+/**
+  * Should not be extended outside this file
+  */
 sealed trait Offer {
   def getDiscountedPrice(items: List[Product]): Price
 }

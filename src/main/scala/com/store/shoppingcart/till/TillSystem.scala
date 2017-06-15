@@ -6,6 +6,10 @@ import com.store.shoppingcart.cart.ShoppingCart
 /**
   * Created by praran.
   */
+
+/**
+  * Represents the Till to scan items to the shopping cart
+  */
 object TillSystem {
 
   def scanAndCalculateTotalPrice(items: List[String]) = {

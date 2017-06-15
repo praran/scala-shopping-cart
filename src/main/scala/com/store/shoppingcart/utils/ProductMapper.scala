@@ -5,6 +5,10 @@ import com.store.shoppingcart.domain.{Apple, Orange, Product, UnknownProduct}
 /**
   * Created by praran.
   */
+
+/**
+  * Convert string to product
+  */
 object ProductMapper {
 
   def map(item: String): Product = item match {
