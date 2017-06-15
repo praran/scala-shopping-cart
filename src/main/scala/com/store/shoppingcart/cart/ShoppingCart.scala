@@ -7,6 +7,7 @@ import com.store.shoppingcart.domain.{Price, Product}
   */
 
 class ShoppingCart(items: List[Product]) {
+
   def totalPrice(): Price = items.foldLeft(Price())(priceCombiner)
 
   private def priceCombiner(price: Price, product: Product) = Price(amount = price.amount + product.price)
