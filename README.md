@@ -1,6 +1,7 @@
-https://travis-ci.org/praran/scala-shopping-cart.svg?branch=master
 
 [![Build Status](https://travis-ci.org/praran/scala-shopping-cart.svg?branch=master)](https://travis-ci.org/praran/scala-shopping-cart)
+
+[![Coverage Status](https://coveralls.io/repos/github/praran/scala-shopping-cart/badge.svg?branch=master)](https://coveralls.io/github/praran/scala-shopping-cart?branch=master)
 
 #Step 1: Shopping cart
 
