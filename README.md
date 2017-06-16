@@ -1,3 +1,7 @@
+https://travis-ci.org/praran/scala-shopping-cart.svg?branch=master
+
+[![Build Status](https://travis-ci.org/praran/scala-shopping-cart.svg?branch=master)](https://travis-ci.org/praran/scala-shopping-cart)
+
 #Step 1: Shopping cart
 
 * You are building a checkout system for a shop which only sells apples and
@@ -14,3 +18,4 @@ candidates take a list of strings as input.
 * buy one, get one free on Apples.
 * 3 for the price of 2 on Oranges.
 * Update your checkout functions accordingly.
+
